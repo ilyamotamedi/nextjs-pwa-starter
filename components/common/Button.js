@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 
 const Button = ({ children, ...props }) => {
   let baseColor = props.color || "blue",
