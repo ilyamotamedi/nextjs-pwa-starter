@@ -3,12 +3,12 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   let fullHeightMain = children ? `h-screen` : "",
-    classNames = `pt-20 px-4 w-screen shadow-xl ${fullHeightMain}`;
+    mainClassNames = `px-4 pt-16 w-full ${fullHeightMain}`;
 
   return (
     <>
       <Header />
-      <main className={classNames}>{children}</main>
+      <main className={mainClassNames}>{children}</main>
       <Footer />
     </>
   );

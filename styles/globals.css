@@ -3,11 +3,29 @@
 @tailwind utilities;
 
 * {
-  @apply transition-all duration-300 ease-in-out;
+  /* @apply transition-all duration-300 ease-in-out; */
 }
 
-*:focus {
+a:focus,
+button:focus,
+input:focus,
+select:focus {
   @apply outline-none ring ring-blue-500 ring-opacity-50;
+}
+
+html,
+body {
+  @apply overflow-x-hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-gray-900;
 }
 
 a {
@@ -15,5 +33,5 @@ a {
 }
 
 a:hover {
-  @apply cursor-pointer underline text-blue-600;
+  @apply cursor-pointer text-blue-600;
 }

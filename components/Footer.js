@@ -1,8 +1,10 @@
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({ ...props }) => {
+  const baseColor = props.color || "blue";
+
   return (
-    <footer className="w-full p-4 bg-blue-900 text-white">
+    <footer className={`w-full p-4 bg-gradient-to-r from-${baseColor}-500 md:via-${baseColor}-900 to-${baseColor}-900 text-white`}>
       <div className="container mx-auto">
         <div className="flex items-start md:items-center justify-between">
           <div id="footer-brand" className="font-bold text-2xl">
