@@ -1,6 +1,6 @@
-import { Popover, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
-import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react"
+import { ChevronDownIcon } from "@heroicons/react/solid"
+import { Fragment } from "react"
 
 const solutions = [
   {
@@ -18,7 +18,7 @@ const solutions = [
     description: "Keep track of your growth",
     href: "##",
   },
-];
+]
 
 export default function DialogPopover({
   triggerElement,
@@ -48,5 +48,5 @@ export default function DialogPopover({
         </>
       )}
     </Popover>
-  );
+  )
 }

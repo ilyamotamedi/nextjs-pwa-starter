@@ -1,10 +1,10 @@
-import { useState, Fragment } from "react";
-import { CheckIcon } from "@heroicons/react/solid";
-import { RadioGroup, Transition } from "@headlessui/react";
+import { useState, Fragment } from "react"
+import { CheckIcon } from "@heroicons/react/solid"
+import { RadioGroup, Transition } from "@headlessui/react"
 
 export default function Radios({ optionList, ...props }) {
   const [selected, setSelected] = useState(optionList[0]),
-    baseColor = props.color || "blue";
+    baseColor = props.color || "blue"
 
   return (
     <div {...props}>
@@ -89,5 +89,5 @@ export default function Radios({ optionList, ...props }) {
         </div>
       </RadioGroup>
     </div>
-  );
+  )
 }

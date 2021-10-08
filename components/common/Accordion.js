@@ -1,9 +1,9 @@
-import { Fragment } from "react";
-import { Disclosure, Transition } from "@headlessui/react";
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import { Fragment } from "react"
+import { Disclosure, Transition } from "@headlessui/react"
+import { ChevronRightIcon } from "@heroicons/react/solid"
 
 export default function Accordion({ items, ...props }) {
-  const baseColor = props.color || "blue";
+  const baseColor = props.color || "blue"
 
   return (
     <div {...props}>
@@ -47,5 +47,5 @@ export default function Accordion({ items, ...props }) {
         ))}
       </div>
     </div>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import { useState, Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { QuestionMarkCircleIcon } from "@heroicons/react/solid";
-import Button from "./Button";
+import { useState, Fragment } from "react"
+import { Dialog, Transition } from "@headlessui/react"
+import { QuestionMarkCircleIcon } from "@heroicons/react/solid"
+import Button from "./Button"
 
 const DialogBox = ({ ...props }) => {
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(false)
 
   return (
     <div {...props}>
@@ -40,8 +40,8 @@ const DialogBox = ({ ...props }) => {
               <div className="flex flex-row-reverse gap-2 items-center p-4">
                 <Button
                   onClick={() => {
-                    setIsOpen(false);
-                    props.confirmFunction();
+                    setIsOpen(false)
+                    props.confirmFunction()
                   }}
                 >
                   {props.confirmButtonText || "Go Ahead"}
@@ -55,7 +55,7 @@ const DialogBox = ({ ...props }) => {
         </Dialog>
       </Transition>
     </div>
-  );
-};
+  )
+}
 
-export default DialogBox;
+export default DialogBox

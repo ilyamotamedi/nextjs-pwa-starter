@@ -1,11 +1,11 @@
-import DialogBox from "../components/common/DialogBox";
-import DropdownMenu from "../components/common/DropdownMenu";
-import Button from "../components/common/Button";
-import Select from "../components/common/Select";
-import ToggleSwitch from "../components/common/ToggleSwitch";
-import Accordion from "../components/common/Accordion";
-import Radios from "../components/common/Radios";
-import DialogPopover from "../components/common/DialogPopover";
+import DialogBox from "../components/common/DialogBox"
+import DropdownMenu from "../components/common/DropdownMenu"
+import Button from "../components/common/Button"
+import Select from "../components/common/Select"
+import ToggleSwitch from "../components/common/ToggleSwitch"
+import Accordion from "../components/common/Accordion"
+import Radios from "../components/common/Radios"
+import DialogPopover from "../components/common/DialogPopover"
 
 export default function Home() {
   return (
@@ -65,7 +65,7 @@ export default function Home() {
         ></Radios>
       </div>
     </div>
-  );
+  )
 }
 
 const DialogBoxContent = () => {
@@ -77,8 +77,8 @@ const DialogBoxContent = () => {
       </p>
       <AccordionElement />
     </>
-  );
-};
+  )
+}
 
 const AccordionElement = () => {
   return (
@@ -98,5 +98,5 @@ const AccordionElement = () => {
         },
       ]}
     />
-  );
-};
+  )
+}

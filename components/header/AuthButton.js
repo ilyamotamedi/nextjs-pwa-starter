@@ -1,10 +1,10 @@
-import { ArrowCircleRightIcon } from "@heroicons/react/solid";
-import Button from "../common/Button";
+import { ArrowCircleRightIcon } from "@heroicons/react/solid"
+import Button from "../common/Button"
 
 const AuthButton = () => {
   const user = false, // TODO
     authRoute = user ? "/api/auth/logout" : "/api/auth/login",
-    authText = user ? "Sign Out" : "Sign In";
+    authText = user ? "Sign Out" : "Sign In"
 
   return (
     <Button asLink href={authRoute} inverted={!!user}>
@@ -12,7 +12,7 @@ const AuthButton = () => {
       <span className="flex-grow" />
       {authText}
     </Button>
-  );
-};
+  )
+}
 
-export default AuthButton;
+export default AuthButton

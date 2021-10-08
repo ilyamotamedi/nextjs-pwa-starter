@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 
 const Button = ({ children, ...props }) => {
   let baseColor = props.color || "blue",
@@ -22,19 +22,19 @@ const Button = ({ children, ...props }) => {
       ${activeClasses}
       ${disabledClasses}
       inline-flex items-center justify-center gap-1 ring-1 ring-${baseColor}-500 rounded-md w-24 min-w-max px-4 py-2 text-center text-sm font-medium text-center hover:no-underline
-      `;
+      `
 
   if (props.asLink)
     return (
       <Link passHref {...props}>
         <a className={classNames}>{children}</a>
       </Link>
-    );
+    )
   return (
     <button className={classNames} {...props}>
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

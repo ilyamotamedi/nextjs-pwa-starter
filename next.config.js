@@ -1,5 +1,5 @@
 const withPWA = require("next-pwa"),
-  disablePWA = process.env.DISABLE_PWA;
+  disablePWA = process.env.DISABLE_PWA
 
 module.exports = withPWA({
   pwa: {
@@ -7,4 +7,4 @@ module.exports = withPWA({
     disable: disablePWA,
   },
   reactStrictMode: true,
-});
+})

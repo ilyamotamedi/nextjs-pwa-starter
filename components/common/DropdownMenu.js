@@ -1,11 +1,11 @@
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
-import Link from "next/link";
-import Button from "./Button";
+import { Fragment } from "react"
+import { Menu, Transition } from "@headlessui/react"
+import { ChevronDownIcon } from "@heroicons/react/solid"
+import Link from "next/link"
+import Button from "./Button"
 
 export default function DropdownMenu({ items, ...props }) {
-  const baseColor = props.color || "blue";
+  const baseColor = props.color || "blue"
 
   return (
     <div {...props}>
@@ -53,5 +53,5 @@ export default function DropdownMenu({ items, ...props }) {
         </Transition>
       </Menu>
     </div>
-  );
+  )
 }

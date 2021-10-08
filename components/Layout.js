@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   let fullHeightMain = children ? `h-screen` : "",
-    mainClassNames = `px-4 pt-16 w-full ${fullHeightMain}`;
+    mainClassNames = `px-4 pt-16 w-full ${fullHeightMain}`
 
   return (
     <>
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <main className={mainClassNames}>{children}</main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

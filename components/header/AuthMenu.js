@@ -1,7 +1,7 @@
-import { Menu } from "@headlessui/react";
+import { Menu } from "@headlessui/react"
 
 const AuthMenu = ({ ...props }) => {
-  const baseColor = props.color || "blue";
+  const baseColor = props.color || "blue"
 
   return (
     <Menu>
@@ -32,7 +32,7 @@ const AuthMenu = ({ ...props }) => {
         </Menu.Item>
       </Menu.Items>
     </Menu>
-  );
-};
+  )
+}
 
-export default AuthMenu;
+export default AuthMenu

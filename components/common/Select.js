@@ -1,10 +1,10 @@
-import { Fragment, useState } from "react";
-import { Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
+import { Fragment, useState } from "react"
+import { Listbox, Transition } from "@headlessui/react"
+import { CheckIcon, SelectorIcon } from "@heroicons/react/solid"
 
 export default function Select({ options, ...props }) {
   const [selected, setSelected] = useState(options[0]),
-    baseColor = props.color || "blue";
+    baseColor = props.color || "blue"
 
   return (
     <Listbox value={selected} onChange={setSelected}>
@@ -62,5 +62,5 @@ export default function Select({ options, ...props }) {
         </Transition>
       </div>
     </Listbox>
-  );
+  )
 }

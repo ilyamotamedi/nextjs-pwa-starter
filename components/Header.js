@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Dropdown from "./common/DropdownMenu";
-import AuthButton from "./header/AuthButton";
+import Link from "next/link"
+import Dropdown from "./common/DropdownMenu"
+import AuthButton from "./header/AuthButton"
 
 const Header = ({ ...props }) => {
   return (
@@ -20,7 +20,7 @@ const Header = ({ ...props }) => {
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

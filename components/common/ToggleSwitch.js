@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Switch } from "@headlessui/react";
+import { useState } from "react"
+import { Switch } from "@headlessui/react"
 
 export default function ToggleSwitch({ ...props }) {
   const [enabled, setEnabled] = useState(false),
-    baseColor = props.color || "blue";
+    baseColor = props.color || "blue"
 
   return (
     <div {...props}>
@@ -31,5 +31,5 @@ export default function ToggleSwitch({ ...props }) {
         </Switch.Label>
       </Switch.Group>
     </div>
-  );
+  )
 }

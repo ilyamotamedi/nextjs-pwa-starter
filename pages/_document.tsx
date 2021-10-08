@@ -1,11 +1,12 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
-const APP_NAME = "Next PWA Starter";
-const APP_DESCRIPTION = "PWA boilerplate using NextJS, TailwindCSS, and a few useful common components";
+const APP_NAME = "Next PWA Starter"
+const APP_DESCRIPTION =
+  "PWA boilerplate using NextJS, TailwindCSS, and a few useful common components"
 
 export default class AppDocument extends Document {
   static async getInitialProps(ctx) {
-    return await Document.getInitialProps(ctx);
+    return await Document.getInitialProps(ctx)
   }
 
   render() {
@@ -39,6 +40,6 @@ export default class AppDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
