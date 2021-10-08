@@ -3,15 +3,17 @@ import Dropdown from "./common/DropdownMenu"
 import AuthButton from "./header/AuthButton"
 
 const Header = ({ ...props }) => {
+  const baseColor: String = props.color || "blue"
+
   return (
     <header
       className="fixed top-0 z-50 w-screen px-4 py-3 bg-white bg-opacity-90 backdrop-filter backdrop-blur ring-1 ring-black ring-opacity-25"
-      props
+      {...props}
     >
       <div className="container mx-auto flex content-between items-center">
         <div id="header-brand">
           <Link href="/">
-            <a className="font-bold text-2xl">Brand</a>
+            <a className={`font-bold text-2xl text-${baseColor}-500`}>Brand</a>
           </Link>
         </div>
         <span className="flex-grow"></span>
