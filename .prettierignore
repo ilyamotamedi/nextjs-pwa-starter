@@ -1,0 +1,14 @@
+# artifacts
+.next
+.husky
+node_modules
+package-lock.json
+
+# PWA
+public/sw*
+public/workbox
+
+# testing and production
+coverage
+out
+build
