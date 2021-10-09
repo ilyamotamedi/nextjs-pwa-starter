@@ -8,7 +8,7 @@ const Button = ({ children, ...props }) => {
     backgroundHoverClass = props.inverted
       ? `hover:bg-${baseColor}-500`
       : `hover:bg-${baseColor}-600`,
-    focusClasses = `focus:outline-none focus-visible:ring focus-visible:ring-${baseColor}-500 focus-visible:ring-opacity-50`,
+    focusClasses = `focus:outline-none focus:ring focus:ring-offset-${baseColor}-500 focus:ring-opacity-50`,
     activeClasses = props.inverted
       ? `active:border active:border-${baseColor}-500`
       : `active:bg-${baseColor}-600`,

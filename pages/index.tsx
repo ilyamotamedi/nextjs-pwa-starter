@@ -8,17 +8,25 @@ import Radios from "../components/common/Radios"
 import DialogPopover from "../components/common/DialogPopover"
 
 export default function Home() {
+  const themeColor = "green"
+
   return (
     <div className="container mx-auto mt-3">
       <div className="flex flex-wrap items-center gap-2">
         <DialogBox
-          triggerElement={<Button role="button">Dialog Box</Button>}
-          content={<DialogBoxContent />}
+          triggerElement={
+            <Button role="button" color={themeColor}>
+              Dialog Box
+            </Button>
+          }
+          color={themeColor}
+          content={<DialogBoxContent color={themeColor} />}
           confirmFunction={() => window.alert("confirmed.")}
         />
         <div className="inline-block">
           <DropdownMenu
             buttonLabel="Dropdown"
+            color={themeColor}
             items={[
               { title: "Delete", href: "/" },
               { title: "Plant", href: "/poo" },
@@ -27,10 +35,16 @@ export default function Home() {
           />
         </div>
         <DialogPopover
-          triggerElement={<Button role="button">Dialog Popover</Button>}
-          panelContent={<AccordionElement />}
+          triggerElement={
+            <Button role="button" color={themeColor}>
+              Dialog Popover
+            </Button>
+          }
+          panelContent={<AccordionElement color={themeColor} />}
+          color={themeColor}
         />
         <Select
+          color={themeColor}
           options={[
             { name: "Wade Cooper" },
             { name: "Arlene Mccoy" },
@@ -45,11 +59,13 @@ export default function Home() {
         <ToggleSwitch
           label="Toggle Switch"
           description="A switch that toggles"
+          color={themeColor}
         />
       </div>
       <div className="flex items-stretch gap-3">
         <Radios
           className="min-w-max flex-grow"
+          color={themeColor}
           optionList={[
             {
               value: "abacus",
@@ -68,23 +84,23 @@ export default function Home() {
   )
 }
 
-const DialogBoxContent = () => {
+const DialogBoxContent = ({ color }) => {
   return (
     <>
       <p>
         Are you sure you would like to do this? Here are some reasons why you
         probably shouldn&apos;t:
       </p>
-      <AccordionElement />
+      <AccordionElement color={color} />
     </>
   )
 }
 
-const AccordionElement = () => {
+const AccordionElement = ({ color }) => {
   return (
     <Accordion
       className="w-full"
-      color="yellow"
+      color={color}
       items={[
         {
           title: "First Accordion Item",

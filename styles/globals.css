@@ -2,15 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* @apply transition-all duration-300 ease-in-out; */
-}
-
-a:focus,
-button:focus,
-input:focus,
-select:focus {
-  @apply outline-none ring ring-blue-500 ring-opacity-50;
+*:focus {
+  @apply outline-none;
 }
 
 html,

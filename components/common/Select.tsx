@@ -10,7 +10,7 @@ export default function Select({ options, ...props }) {
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative z-20 min-w-max flex-grow">
         <Listbox.Button
-          className={`relative min-w-full max-w-full py-2 pl-4 pr-10 text-left bg-white rounded-md cursor-default focus:outline-none focus-visible:ring focus-visible:ring-opacity-50 focus-visible:ring-${baseColor}-500 ring-1 ring-black ring-opacity-25 text-sm font-medium`}
+          className={`relative min-w-full max-w-full py-2 pl-4 pr-10 text-left bg-white rounded-md cursor-default focus:outline-none focus:ring focus:ring-${baseColor}-500 focus:ring-opacity-50 ring-1 ring-black ring-opacity-25 text-sm font-medium`}
         >
           <span className="block truncate">{selected.name}</span>
           <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">

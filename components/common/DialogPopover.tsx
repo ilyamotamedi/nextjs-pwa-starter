@@ -26,10 +26,10 @@ export default function DialogPopover({
   ...props
 }) {
   return (
-    <Popover className="relative">
+    <Popover className="relative focus:outline-none" tabIndex={-1}>
       {({ open }) => (
         <>
-          <Popover.Button className="rounded-md">
+          <Popover.Button className="rounded-md" tabIndex={-1}>
             {triggerElement}
           </Popover.Button>
           <Transition

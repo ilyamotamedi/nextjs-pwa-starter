@@ -4,7 +4,8 @@ import { QuestionMarkCircleIcon } from "@heroicons/react/solid"
 import Button from "./Button"
 
 const DialogBox = ({ ...props }) => {
-  let [isOpen, setIsOpen] = useState(false)
+  let [isOpen, setIsOpen] = useState(false),
+    baseColor = props.color || "blue"
 
   return (
     <div {...props}>
@@ -39,6 +40,7 @@ const DialogBox = ({ ...props }) => {
 
               <div className="flex flex-row-reverse gap-2 items-center p-4">
                 <Button
+                  color={baseColor}
                   onClick={() => {
                     setIsOpen(false)
                     props.confirmFunction()
@@ -46,7 +48,11 @@ const DialogBox = ({ ...props }) => {
                 >
                   {props.confirmButtonText || "Go Ahead"}
                 </Button>
-                <Button inverted onClick={() => setIsOpen(false)}>
+                <Button
+                  inverted
+                  color={baseColor}
+                  onClick={() => setIsOpen(false)}
+                >
                   {props.cancelButtonText || "Cancel"}
                 </Button>
               </div>

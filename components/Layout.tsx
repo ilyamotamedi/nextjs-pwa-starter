@@ -10,7 +10,7 @@ const Layout = ({ children, ...props }) => {
     <>
       <Header color={props.color} />
       <main className={mainClassNames}>{children}</main>
-      <Footer />
+      <Footer color={props.color} />
     </>
   )
 }
