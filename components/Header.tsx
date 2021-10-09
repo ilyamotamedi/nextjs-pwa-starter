@@ -1,6 +1,4 @@
 import Link from "next/link"
-import Dropdown from "./common/DropdownMenu"
-import AuthButton from "./header/AuthButton"
 
 const Header = ({ ...props }) => {
   const baseColor: String = props.color || "blue"
@@ -17,9 +15,7 @@ const Header = ({ ...props }) => {
           </Link>
         </div>
         <span className="flex-grow"></span>
-        <nav className="flex items-center gap-2">
-          <AuthButton />
-        </nav>
+        <nav className="flex items-center gap-2"></nav>
       </div>
     </header>
   )
