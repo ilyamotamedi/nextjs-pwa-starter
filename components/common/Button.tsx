@@ -26,7 +26,7 @@ const Button = ({ children, ...props }) => {
 
   if (props.asLink)
     return (
-      <Link passHref {...props}>
+      <Link href={props.href} passHref {...props}>
         <a className={classNames}>{children}</a>
       </Link>
     )
