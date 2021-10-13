@@ -8,7 +8,7 @@ import Radios from "../components/common/Radios"
 import DialogPopover from "../components/common/DialogPopover"
 
 export default function Home() {
-  const themeColor = "green"
+  const themeColor = "red"
 
   return (
     <div className="container mx-auto mt-3">
@@ -62,24 +62,36 @@ export default function Home() {
           color={themeColor}
         />
       </div>
-      <div className="flex items-stretch gap-3">
-        <Radios
-          className="min-w-max flex-grow"
-          color={themeColor}
-          optionList={[
-            {
-              value: "abacus",
-              title: "Abacus",
-              description: "123 Abacus Avenue",
-            },
-            {
-              value: "googoo",
-              title: "Donkey",
-              description: "123 Donkey Avenue",
-            },
-          ]}
-        ></Radios>
-      </div>
+      <Radios
+        color={themeColor}
+        optionList={[
+          {
+            value: "abacus",
+            title: "Abacus",
+            description: "123 Abacus Avenue",
+          },
+          {
+            value: "googoo",
+            title: "Donkey",
+            description: "123 Donkey Avenue",
+          },
+          {
+            value: "doda",
+            title: "Moon",
+            description: "123 Moon Avenue",
+          },
+          {
+            value: "1klasmd",
+            title: "Cow",
+            description: "123 Cow Avenue",
+          },
+          {
+            value: "opnqc",
+            title: "Dog",
+            description: "123 Dog Avenue",
+          },
+        ]}
+      ></Radios>
     </div>
   )
 }

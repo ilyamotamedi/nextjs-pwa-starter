@@ -14,7 +14,7 @@ export default function ToggleSwitch({ ...props }) {
           className={`${
             enabled
               ? `bg-${baseColor}-500 ring-${baseColor}-500`
-              : `bg-gray-400 ring-gray-500`
+              : `bg-gray-300 ring-black ring-opacity-25`
           }
         relative inline-flex flex-shrink-0 mt-1 h-6 w-10 ring-1 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200
         focus:outline-none focus:ring focus:ring-${baseColor}-500 focus:ring-opacity-50`}
@@ -23,7 +23,7 @@ export default function ToggleSwitch({ ...props }) {
           <span
             aria-hidden="true"
             className={`${enabled ? "translate-x-4" : "translate-x-0"}
-          pointer-events-none inline-block h-full w-5 rounded-full bg-white transform transition ease-in-out duration-200 ring-1 ring-${baseColor}-800 ring-opacity-10`}
+          pointer-events-none inline-block h-full w-5 rounded-full bg-white transform transition ease-in-out duration-200 ring-1 ring-black ring-opacity-10`}
           />
         </Switch>
         <Switch.Label className="text-sm pl-3 flex flex-col justify-center">

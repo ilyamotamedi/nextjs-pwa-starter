@@ -10,7 +10,7 @@ export default function Radios({ optionList, ...props }) {
     <div {...props}>
       <RadioGroup value={selected} onChange={setSelected} {...props}>
         <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
-        <div className="space-y-3">
+        <div className="flex flex-wrap flex-col sm:flex-row gap-3 max-w-full">
           {optionList.map((option) => (
             <RadioGroup.Option
               key={option.value}
@@ -36,7 +36,7 @@ export default function Radios({ optionList, ...props }) {
               hover:bg-gray-100
               focus:outline-none focus:ring focus:ring-${
                 option.color || baseColor
-              }-500 focus:ring-opacity-50
+              }-500 focus:ring-opacity-50 flex-auto
               `
               }
             >
